@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+
+body {
+  background-color: #5b2386;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+  align-items: center;
+  padding: 140px;
+  text-align: center;
+}
+
+h1 {
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  width: 564px;
+  height: 225px;
+}
+
+.img-title {
+  height: 112px;
+}
+
+.saying {
+  margin-top: 66px;
+  margin-bottom: 78px;
+}
+main > .saying {
+  font-family: "OTEnjoystoriesBA";
+  color: #f5df4d;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+main {
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.discription {
+  background-image: url("../img/quotes.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  margin-bottom: 102px;
+  font-size: 18px;
+  color: white;
+  font-family: GmarketSansMedium;
+  font-weight: 400;
+}
+
+.discription strong {
+  font-family: GmarketSansBold;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.txt-wannabe,
+.txt-time {
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.cont-inp .txt-wannabe {
+  margin-bottom: 27px;
+}
+.cont-inp .txt-time {
+  margin-bottom: 115px;
+}
+.cont-inp .btn-exc {
+  margin-bottom: 147px;
+}
+
+.txt-wannabe .input-wannabe,
+.input-time {
+  width: 228px;
+  height: 57px;
+  border-radius: 7px;
+  border: 0px;
+  text-align: center;
+  font-family: "GmarketSansMedium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #babcbe;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.cont-result strong {
+  font-family: "GmarketSansBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.cont-result .txt-time {
+  margin-bottom: 127px;
+}
+
+.btn-exc {
+  height: 66px;
+  background: #fcee21;
+  border: 0;
+  border-radius: 56px;
+  font-family: "GmarketSansBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #5b2386;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 21px 49px;
+  cursor: pointer;
+}
+.btn-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.btn-wrapper .img-click {
+  position: absolute;
+  right: 60px;
+  top: 15px;
+}
+
+.share {
+  margin-left: 18px;
+  background: #ffffff;
+}
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+footer {
+  text-align: center;
+  padding-bottom: 116px;
+}
+
+footer > h2 {
+  margin-bottom: 20px;
+}
+.cont-modal {
+  position: absolute;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 800px;
+  height: 800px;
+  border-radius: 30px;
+  color: #5b2386;
+}
+.cont-modal p {
+  font-family: OTEnjoystoriesBA;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 76px;
+  margin-bottom: 29px;
+}
+
+.cont-modal p strong {
+  font-size: 96px;
+  line-height: 106px;
+}
+
+.cont-modal .img-licat {
+  width: 433px;
+  height: 337px;
+  margin-bottom: 74px;
+}
+.show {
+  display: flex;
+}
+
+/* 모바일 미디어 쿼리 */
+
+@media (max-width: 394px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: auto;
+    align-items: center;
+    padding: 0px;
+    padding-top: 41px;
+  }
+
+  header h1 {
+    width: auto;
+    background-size: 125px 126px;
+    height: 126px;
+  }
+
+  header .img-title {
+    width: 267px;
+    height: 53px;
+  }
+  main > .saying {
+    font-size: 22px;
+    margin-top: 31px;
+    margin-bottom: 78px;
+  }
+  main {
+    margin-bottom: 0px;
+  }
+
+  .btn-exc {
+    width: 241px;
+    height: 68px;
+    border-radius: 13px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+  .btn-wrapper .img-click {
+    width: 43px;
+    height: 48px;
+    right: -10px;
+    top: 30px;
+  }
+  .discription {
+    margin-bottom: 62px;
+  }
+  .discription > p {
+    font-size: 16px;
+    color: white;
+    background-image: url("../img/quotes.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    line-height: 24px;
+    margin-top: 6px;
+  }
+  .discription strong {
+    font-family: GmarketSansBold;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .cont-inp p {
+    font-size: 14px;
+  }
+  .txt-wannabe .input-wannabe,
+  .input-time {
+    width: 156px;
+    height: 37px;
+    font-size: 14px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .cont-inp .txt-time {
+    margin-bottom: 49px;
+  }
+
+  .input-time {
+    margin-top: 19px;
+  }
+
+  .block {
+    display: block;
+  }
+  .cont-inp .btn-exc {
+    margin-bottom: 64px;
+  }
+  .cont-inp .txt-time {
+    flex-direction: column;
+  }
+
+  .cont-result .txt-wannabe,
+  .txt-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .txt-wannabe strong,
+  .txt-time strong {
+    font-size: 24px;
+  }
+  .cont-result .txt-time {
+    margin-bottom: 55px;
+  }
+
+  .cont-result > .btn-wrapper {
+    height: auto;
+    margin-bottom: 83px;
+  }
+  .cont-result .btn-exc {
+    width: auto;
+    height: auto;
+    padding: 13.5px 17.5px 12.5px 17.5px;
+    border-radius: 56px;
+    float: left;
+  }
+  footer {
+    font-size: 9px;
+    padding-bottom: 30px;
+  }
+  footer img {
+    width: 91px;
+    height: 18px;
+  }
+  /* 모바일 모달창 */
+  .cont-modal {
+    position: absolute;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 330px;
+    height: 500px;
+    border-radius: 30px;
+    color: #5b2386;
+  }
+  .cont-modal p {
+    font-family: OTEnjoystoriesBA;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cont-modal p strong {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .cont-modal .img-licat {
+    width: 241px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .show {
+    display: flex;
+  }
+  #popup-close {
+    margin-bottom: 40px;
+  }
+}
