@@ -78,7 +78,7 @@ main {
 .discription {
   background-image: url("../img/quotes.png");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 20px;
   margin-bottom: 102px;
   font-size: 18px;
   line-height: 33px;
