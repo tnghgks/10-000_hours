@@ -33,13 +33,20 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
       format("opentype");
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 body {
   background-color: #5b2386;
   display: flex;
   flex-direction: column;
   color: #fff;
-
   align-items: center;
   padding-top: 140px;
   text-align: center;
@@ -178,6 +185,20 @@ main {
   margin-left: 18px;
   background: #ffffff;
 }
+#result {
+  display: none;
+}
+
+article#loading_img {
+  display: none;
+}
+
+img.loading_clock {
+  width: 100px;
+  height: 100px;
+  animation: rotate 1s infinite linear;
+}
+
 .blind {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -230,8 +251,11 @@ footer > .txt-footer {
   height: 337px;
   margin-bottom: 74px;
 }
-.show {
+.modal {
   display: flex;
+}
+.show {
+  display: block !important;
 }
 
 /* 모바일 미디어 쿼리 */
@@ -370,6 +394,10 @@ footer > .txt-footer {
     font-size: 9px;
     line-height: 13px;
     font-family: "Noto Sans KR";
+  }
+  img.loading_clock {
+    width: 50px;
+    height: 50px;
   }
   /* 모바일 모달창 */
   .cont-modal {
